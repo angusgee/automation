@@ -20,6 +20,9 @@ df = pd.DataFrame(data)
 # The attribute returns a tuple so convert it into a list
 print(list(df.shape))
 
+# Print the first n rows of the df
+print(df.head(3))
+
 # Print the size of the df, meaning the number of cells -> int
 print(df.size)
 
