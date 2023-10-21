@@ -34,7 +34,7 @@ def combine_two_tables(person: pd.DataFrame, address: pd.DataFrame) -> pd.DataFr
 
 def main():
     df = (combine_two_tables(person, address))
-    print(tblt(df.fillna('Null'), headers='keys', tablefmt='pipe', showindex=False))
+    print(tblt(df.fillna('Null'), headers='keys', tablefmt='pretty', showindex=False))
 
 if __name__ == '__main__':
     main()
