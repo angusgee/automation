@@ -12,8 +12,6 @@ student_data = [
 # Define the column names as the second argument
 def createDataframe(student_data: list[list[int]]) -> pd.DataFrame:
     df = pd.DataFrame(student_data, columns=['student_id', 'age'], dtype='int8')
-    # df['student_id'] = df['student_id'].astype('int8')
-    # df['age'] = df['age'].astype('int8')
     return df
 
 def main():
